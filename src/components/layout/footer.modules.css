@@ -1,0 +1,37 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul li {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+ul li:hover {
+    color: orange;
+}
+
+span {
+    color: orange;
+    font-weight: bold;
+}

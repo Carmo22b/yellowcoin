@@ -1,0 +1,15 @@
+.project_container {
+    padding: 2em;
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.container_pai {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 16px;
+}

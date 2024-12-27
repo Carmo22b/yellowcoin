@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": "8c11",
+      "name": "joao aaaaa",
+      "budget": "500",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": null,
+      "services": [
+        {
+          "name": "meu projeto",
+          "cost": "300",
+          "description": "serviço",
+          "id": "87a679c2-6ebe-456f-a4fd-b72ff2ed62b8"
+        }
+      ]
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "name": "Infra"
+    },
+    {
+      "id": "2",
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": "3",
+      "name": "Design"
+    },
+    {
+      "id": "4",
+      "name": "Planejamento"
+    }
+  ]
+}
