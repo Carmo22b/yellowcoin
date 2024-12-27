@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yellowcoin/static/css/main.359ff5c0.css",
+    "main.js": "/yellowcoin/static/js/main.c85e893f.js",
+    "static/media/a-logo-of-a-yellow-coin-with-the-text-yellow-coin--2PVrsHhoSfGLRkSmnVPMLg-tE6X-TGKRf6XaecGvORIeQ-removebg-preview.png": "/yellowcoin/static/media/a-logo-of-a-yellow-coin-with-the-text-yellow-coin--2PVrsHhoSfGLRkSmnVPMLg-tE6X-TGKRf6XaecGvORIeQ-removebg-preview.b6b5de76ba04b66c10d8.png",
+    "static/media/a-3d-render-of-a-piggy-bank-in-the-shape-of-a-pig--sN_u1kxKT7ObXRASIFUEvw-Skrmb09zTLyvP9OK9qbBvQ.jpeg": "/yellowcoin/static/media/a-3d-render-of-a-piggy-bank-in-the-shape-of-a-pig--sN_u1kxKT7ObXRASIFUEvw-Skrmb09zTLyvP9OK9qbBvQ.447d7d47038a43ce17ea.jpeg",
+    "static/media/1487.gif": "/yellowcoin/static/media/1487.707b79309581ce09ed58.gif",
+    "index.html": "/yellowcoin/index.html",
+    "main.359ff5c0.css.map": "/yellowcoin/static/css/main.359ff5c0.css.map",
+    "main.c85e893f.js.map": "/yellowcoin/static/js/main.c85e893f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.359ff5c0.css",
+    "static/js/main.c85e893f.js"
+  ]
+}
