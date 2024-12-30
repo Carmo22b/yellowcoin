@@ -12,7 +12,9 @@ function NovosProjetos() {
     project.cost = 0
     project.services = []
 
-    fetch("https://yellowcoin-backend.onrender.com/projects", {
+    const API_URL = process.env.REACT_APP_API_URL; // Usando variável de ambiente
+
+    fetch(`${API_URL}/projects`, {
         method: "POST",
         headers: {
             "Content-type": "application/json",

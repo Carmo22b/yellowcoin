@@ -25,8 +25,9 @@ function Project() {
 
     useEffect(() => {
         setTimeout(() => {
-
-            fetch(`https://yellowcoin-backend.onrender.com/projects/${id}`, {
+            const API_URL = process.env.REACT_APP_API_URL; // Use a variável de ambiente
+    
+            fetch(`${API_URL}/projects/${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -37,9 +38,8 @@ function Project() {
                     setServices(data.services)
                 })
                 .catch(err => console.log(err))
-
         }, 500)
-    }, [id])
+    }, [id]);
 
     function editPost(project) {
         setMessage("")
@@ -52,7 +52,9 @@ function Project() {
             return false
         }
 
-        fetch(`https://yellowcoin-backend.onrender.com/projects/${project.id}`, {
+        const API_URL = process.env.REACT_APP_API_URL;
+
+        fetch(`${API_URL}/projects/${project.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -96,12 +98,13 @@ function Project() {
 
         project.cost = newCost
 
-        fetch(`https://yellowcoin-backend.onrender.com/projects/${project.id}`, {
+        const API_URL = process.env.REACT_APP_API_URL;
+
+        fetch(`${API_URL}/projects/${project.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
             },
-
             body: JSON.stringify(project)
         })
             .then((resp) => resp.json())
@@ -121,7 +124,9 @@ function Project() {
         projectUpdated.services = servicesUpdated
         projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
 
-        fetch(`https://yellowcoin-backend.onrender.com/projects/${projectUpdated.id}`, {
+        const API_URL = process.env.REACT_APP_API_URL;
+        
+        fetch(`${API_URL}/projects/${projectUpdated.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

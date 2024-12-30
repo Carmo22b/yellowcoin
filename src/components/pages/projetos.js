@@ -24,7 +24,9 @@ function Projetos() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch("http://localhost:5000/projects", {
+            const API_URL = process.env.REACT_APP_API_URL; // Usando variável de ambiente
+
+            fetch(`${API_URL}/projects`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -33,9 +35,7 @@ function Projetos() {
                 .then((resp) => resp.json())
                 .then((data) => {
                     console.log(data);
-
                     setProjects(data)
-
                     setRemoveLoading(true)
                 })
                 .catch((err) => console.log(err))
@@ -43,7 +43,9 @@ function Projetos() {
     }, [])
 
     function removeProject(id) {
-        fetch(`http://localhost:5000/projects/${id}`, {
+        const API_URL = process.env.REACT_APP_API_URL; // Usando variável de ambiente
+
+        fetch(`${API_URL}/projects/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
@@ -66,7 +68,7 @@ function Projetos() {
             </div>
 
             {messagem && <Mensagem type="success" msg={messagem}></Mensagem>}
-            
+
             <div className={styles.container_pai}>
                 {projectMassage && <Mensagem type="success" msg={projectMassage}></Mensagem>}
                 {projects.length > 0 &&
