@@ -12,7 +12,7 @@ function NovosProjetos() {
     project.cost = 0
     project.services = []
 
-    fetch("http://localhost:5000/projects", {
+    fetch("https://yellowcoin-backend.onrender.com/projects", {
         method: "POST",
         headers: {
             "Content-type": "application/json",
